@@ -1,12 +1,29 @@
 ---
-title: Using YOUR-PRODUCT-NAME
+title: Using the Contrast Security Service Broker
 owner: Partners
 ---
 
-This topic describes how to use YOUR-PRODUCT-NAME.
+This topic describes how to use the Contrast Security Service Broker.
 
-##<a id='using'></a> Using YOUR-PRODUCT-NAME
+##<a id='using'></a> Using Contrast Security Service Broker
 
-**This topic should include any instructions for how to use the service or dashboard created by the tile. Give procedures for how to perform the different functions offered by your product, and provide screenshots where necessary.** 
+### <a id="Service Instance"></a>Create a service instance
+To use the service broker you need to navigate to your Apps Manager instance.
 
-**You can also use this section to include information about Architecture and Troubleshooting for known errors. If you include a Troubleshooting section, follow the Symptom/Explanation format used in the [Okta Troubleshooting](http://docs.pivotal.io/p-identity/okta/troubleshooting.html) topic**.
+1. Within **Apps Manager** navigate to the **Marketplace**
+
+2. Under **Services** navigate to **Contrast Security Service Broker**
+
+3. Select the **Service Plan** you want to create an instance of.
+
+<img src="images/contrast-service-plan.png" alt="Contrast service plan">
+
+4. Click **Select this plan**
+
+5. Define an instance name & select an app to bind the service to.
+
+6. Click **Add**
+
+7. The application you chose to bound the service to will now have your Contrast Security credentials configured as a service plan.
+
+8. If you are using the Contrast Security buildpack the next time you restage your application the Java agent will be downloaded and used to instrument the application.
