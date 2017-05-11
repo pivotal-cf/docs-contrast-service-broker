@@ -1,35 +1,79 @@
 ---
-title: Contrast Security Service Broker for PCF
+title: Contrast Security Service Broker for PCF (Beta)
 owner: Partners
 ---
 
+<style>
+    .note.warning {
+        background-color: #fdd;
+        border-color: #fbb
+    }
+    .note.warning:before {
+        color: #f99;
+     }
+</style>
 
-This documentation describes the Contrast Security Service Broker for Pivotal Cloud Foundry(PCF).
-The Contrast Security Service Broker tile registers a service broker, allows users to define service plans, and exposes these plans on the Marketplace.
-Developers can bind Contrast credentials to applications by creating instances of the service plans using Apps Manager or the cf CLI.
+<p class="note warning">
+<strong>IMPORTANT: </strong>
+The Contrast Security Service Broker for Pivotal Cloud Foundry (PCF) tile is currently in beta 
+and is intended for evaluation and test purposes only. 
+Do not use this product in a PCF production environment.
+</p>
 
-Instrument your applications with Contrast Security to gain real-time visibility to vulnerabilities in your application and to defend them against attacks. Contrast integrates with your existing SDLC processes to provide a way to view and fix vulnerabilities in your code and protect your applications.
+This documentation describes the Contrast Security Service Broker for PCF.
+The Contrast Security Service Broker for PCF tile registers a service broker, allows users to define service plans, and exposes these plans on the Marketplace.
+Developers can bind Contrast credentials to applications by creating instances of the service plans using Apps Manager or the Cloud Foundry 
+Command Line Interface (cf CLI) tool.
+
+Instrument your applications with Contrast Security Service Broker for PCF to gain real-time visibility to 
+vulnerabilities in your application and to defend them against attacks. 
+Contrast integrates with your existing software development life cycle (SDLC) processes to provide a way to view and fix 
+vulnerabilities in your code and protect your applications.
+
 
 ## <a id='overview'></a>Overview
-Contrast Security Service Broker includes the following key features:
+
+Contrast Security Service Broker for PCF includes the following key features:
 
 * Create and manage multiple service plans for different organizations.
 * Bind Contrast credentials to applications.
 
 ## <a id="snapshot"></a>Product Snapshot
 
-<dl>
-<dt>Contrast Security for PCF details:</dt>
-<dd><strong>Version</strong>: v0.1.13 </dd>
-<dd><strong>Release date</strong>: April 5, 2016</dd>
-<dd><strong>Software component version</strong>: v0.1.13</dd>
-<dd><strong>Compatible Ops Manager version(s)</strong>: v1.7.x, v1.8.x, v1.9.x, v1.10.x</dd>
-<dd><strong>Compatible Elastic Runtime version(s)</strong>: v.1.7.x, v.1.8.x, v.1.9.x, v.1.10.x</dd>
-</dl>
+The following table provides version and version support information about Contrast Security Service Broker for PCF.
+ 
+<table class="nice">
+    <th>Element</th>
+    <th>Details</th>
+    <tr>
+        <td>Version</td>
+        <td>v0.1.13</td>
+    </tr>
+    <tr>
+        <td>Release date</td>
+        <td>March 31, 2017</td>
+    </tr>
+    <tr>
+        <td>Software component version</td>
+        <td>v0.1.13</td>
+    </tr>
+    <tr>
+        <td>Compatible Ops Manager version(s)</td>
+        <td>v1.7.x, v1.8.x, v1.9.x, v1.10.x</td>
+    </tr>
+    <tr>
+        <td>Compatible Elastic Runtime version(s)</td>
+        <td>v1.7.x, v1.8.x, v1.9.x, v1.10.x</td>
+    </tr>
+    <tr>
+        <td>IaaS support</td>
+        <td>AWS, Azure, GCP, OpenStack, and vSphere</td>
+    </tr>
+</table>
 
 ## <a id="reqs"></a>Requirements
 
-Contrast Security for PCF has the following requirements:
+Contrast Security Service Broker for PCF has the following requirements:
 
 + A Contrast Security account
 
