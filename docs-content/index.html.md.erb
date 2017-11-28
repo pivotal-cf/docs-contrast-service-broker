@@ -13,13 +13,6 @@ owner: Partners
      }
 </style>
 
-<p class="note warning">
-<strong>IMPORTANT: </strong>
-The Contrast Security Service Broker for Pivotal Cloud Foundry (PCF) tile is currently in beta 
-and is intended for evaluation and test purposes only. 
-Do not use this product in a PCF production environment.
-</p>
-
 This documentation describes the Contrast Security Service Broker for PCF.
 The Contrast Security Service Broker for PCF tile registers a service broker, allows users to define service plans, and exposes these plans on the Marketplace.
 Developers can bind Contrast credentials to applications by creating instances of the service plans using Apps Manager or the Cloud Foundry 
@@ -47,23 +40,23 @@ The following table provides version and version support information about Contr
     <th>Details</th>
     <tr>
         <td>Version</td>
-        <td>v0.1.13</td>
+        <td>v0.2.0</td>
     </tr>
     <tr>
         <td>Release date</td>
-        <td>March 31, 2017</td>
+        <td>December 1, 2017</td>
     </tr>
     <tr>
         <td>Software component version</td>
-        <td>v0.1.13</td>
+        <td>v0.2.0</td>
     </tr>
     <tr>
         <td>Compatible Ops Manager version(s)</td>
-        <td>v1.7.x, v1.8.x, v1.9.x, v1.10.x</td>
+        <td>v1.10.x, v1.11.x, v1.12.x</td>
     </tr>
     <tr>
         <td>Compatible Elastic Runtime version(s)</td>
-        <td>v1.7.x, v1.8.x, v1.9.x, v1.10.x</td>
+        <td>v1.10.x, v1.11.x, v1.12.x</td>
     </tr>
     <tr>
         <td>IaaS support</td>
@@ -79,7 +72,7 @@ Contrast Security Service Broker for PCF has the following requirements:
 
 ## <a id="limitations"></a>Limitations
 
-+ If you bind a service instance to an application that is not using the Contrast Security Buildpack the application will not download the Contrast Security Java agent.
++ If you bind a service instance to an application that is not using the default CloudFoundry Java Buildpack(or a fork) version 3.20+ or version 4.18+ the agent will not be downloaded.
 
 ## <a id="feedback"></a>Feedback
 
